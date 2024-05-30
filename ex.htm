@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 200vh;
+        }
+
+        .page3 {
+            padding: 50px;
+        }
+
+        .h {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            width: 200px;
+            height: 300px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="page3">
+        <h1 class="h">Education</h1>
+        <div class="container">
+            <div class="card b">
+                <img src="https://via.placeholder.com/200x300" alt="Education Image">
+            </div>
+            <div class="card c">
+                <img src="https://via.placeholder.com/200x300" alt="Education Image">
+            </div>
+            <div class="card d">
+                <img src="https://via.placeholder.com/200x300" alt="Education Image">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(".b", {
+            y: -300,
+            duration: 0.2,
+            scrollTrigger: {
+                trigger: ".b",
+                start: "top 110%",
+                end: "bottom 30%",
+                scrub: true,
+            }
+        });
+
+        gsap.to(".c", {
+            y: -400,
+            duration: 0.2,
+            scrollTrigger: {
+                trigger: ".c",
+                start: "top 110%",
+                end: "bottom 30%",
+                scrub: true,
+            }
+        });
+
+        gsap.to(".d", {
+            y: -500,
+            duration: 0.3,
+            scrollTrigger: {
+                trigger: ".d",
+                start: "top 110%",
+                end: "bottom 30%",
+                scrub: true,
+            }
+        });
+
+        gsap.to(".h", {
+            x: 1100,
+            duration: 0.3,
+            scrollTrigger: {
+                trigger: ".h",
+                start: "top 80%",
+                end: "bottom 10%",
+                scrub: true,
+            }
+        });
+    </script>
+</body>
+</html>

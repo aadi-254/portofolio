@@ -1,0 +1,210 @@
+@media screen and (max-width:780px) {
+
+    *{
+        width: 500px;
+        overflow-x: hidden;
+    }
+    .menu{
+        width: 100%;
+        left: 3%;
+    }
+    
+    /***** page1  ****/
+    .page1{
+        height: 90vh;
+        width: 155vw;
+        top: 0%;     
+    }
+    .para{
+        top: 30%;
+
+    }
+    .mixture{
+        height: 90vh;
+        width: 155vw;
+        top: 90vh;
+    }
+
+    /****** page 2 ***/
+
+
+    .page2{
+        height: 190vh;
+        width: 155vw;
+        top: 161vh;
+        color: rgb(255, 255, 255);
+    }
+    .para2 {
+        height: 45%;
+        width: 100%;
+        padding: 10%; /* Adjust padding as needed */
+        top: 20%;
+        left: 1%;
+        text-align: center;
+        font-size: 20px;
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    .para2 h1{
+        top: 12%;
+        font-size: 46px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        left: 2%;
+    }
+    
+    .para2 span{
+        top: 25%;
+        width: 90%;
+        color: hsl(0 0% 100% / 0.2);
+        background-clip: text;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(red,blue);
+    } 
+    .image{
+        height: 28%;
+        width: 80%;
+        background: url("aditya.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        right: 6%;
+        transform: rotateX(0) rotateY(0);
+        border-radius: 50%;
+    }
+    
+    .head1{
+        color:rgb(255, 255, 255);
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0.4px;
+        font-size: 75px;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 12%;
+        left:6%;
+        z-index: 2;
+    }
+    
+    /***** page 3 ****/
+
+
+    .page3{
+        height: 250vh;
+        width: 155vw;
+        top: 320vh;
+        overflow: hidden;
+    }
+    .head{
+        color:rgb(255, 255, 255);
+        font-size: 75px;
+        font-style: normal;
+        top: 20%;
+        display: block;
+        z-index: 2;
+    }
+
+    .container {
+        height: 65%;
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Arrange cards in a row */
+        gap: 6%;
+        justify-content: space-between;
+        align-items: center;
+        transition: 400ms;
+        top:30%;
+      }
+
+    .card {
+        width: 70%;
+        height: 40%;
+        background-color: rgba(0, 0, 0, 0.909);
+        filter: blur();
+        overflow: auto;
+        text-align: justify;
+    }
+     .card h1{
+        font-family: "Poppins", sans-serif;
+        margin: 10px 16px ;
+        top: 1%;
+        text-align: center;
+        width: 90%;
+    }
+    .discription{
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-size: 16px;
+        width: 90%;
+        text-align: justify;
+        margin: 30px 16px ;
+    }
+    
+
+     /***** page 4 ****/
+
+
+     .page4{
+        height: 300vh;
+        width: 155vw;
+        z-index: 1;
+        top: 566vh;
+        background: rgb(0, 0, 0);
+    }
+    .h4head{
+        font-size: 75px;
+        z-index: 2;
+    }
+    .certificate{
+        height: 70%;
+        width: 90%;
+        left: 4%;
+        top: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .certi-card{
+        height: 20%;
+        width: 100%;
+        transition: 600ms;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+    .certi-card:hover{
+        height: 23%;
+        width: 102%;
+        scale: 1.1;
+        opacity: 1;
+    }
+
+    .textP4{
+        height: 20vh;
+        font-size: 16px;
+        width: 96%;
+        top: 90%;
+        left: 10vw;
+    }
+
+    /********* page 5 ***********/
+
+
+    .page5{
+        position: absolute;
+        top: 858vh;
+        height: 300vh;
+        width: 100vw;
+        background: rgb(0, 0, 0);
+        overflow: hidden;    
+    }
+
+    /***** page 6 ***/
+
+
+    .footer{
+        position: absolute;
+        top: 1303%;
+        height: 100vh;
+        width: 100vw;
+        background: rgb(0, 0, 0);
+    }
+}
