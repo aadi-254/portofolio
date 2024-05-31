@@ -112,7 +112,7 @@ if( window.innerWidth > 800){
 
             // Page 5 Animations
             
-            gsap.from(".h5head", {
+        gsap.from(".h5head", {
               y:300,
               opacity:0,
               duration:1.1,
@@ -124,7 +124,6 @@ if( window.innerWidth > 800){
                   markers: false
               }   
             });
-
 
             gsap.to('.hobbies',{
               //x:-200,
@@ -172,5 +171,192 @@ if( window.innerWidth > 800){
             
             });
 
+            /*** footer ***/
+
+            gsap.from(".fhead", {
+                y:300,
+                opacity:0,
+                duration:1.1,
+                delay:0,          
+                scrollTrigger: {
+                    trigger: ".fhead", // Set the trigger on .div2
+                    start:"top 144%",
+                    toggleActions: "restart none none none",
+                    markers: false
+                }   
+              });
+
+}
+
+
+
+/*********************  for mobile  *************************************/
+
+
+
+if( window.innerWidth < 800){
+     // Page 2 Animations
+     gsap.from(".para2", {
+        y: 100,
+        opacity: 0,
+        duration: 1.3,
+        delay:0.6,
+        scrollTrigger: {
+            trigger: ".para2",
+            start: "top 100%",
+            toggleActions: "restart none none none",
+            markers: false
+        }
+    });
+
+    gsap.from(".image", {
+        x: 300,
+        opacity: 0,
+        delay:0.6,
+        duration: 1.3,
+        scrollTrigger: {
+            trigger: ".image",
+            start: "top 100%",
+            toggleActions: "restart none none none"
+        }
+    });
+
+    gsap.from(".head", {
+        y: 100,
+        opacity: 0,
+        duration: 1.3,
+        delay:0.6,
+        scrollTrigger: {
+            trigger: ".head",
+            start: "top 100%",
+            toggleActions: "restart none none none",
+            markers: false
+        }
+    });
+
+
+
+    gsap.from(".b1", {
+        y: 100,
+        opacity: 0,
+        duration: 0.6,
+        scrollTrigger: {
+            trigger: ".b1",
+            start: "top 100%",
+            toggleActions: "restart none none none",
+            markers: false
+        }
+    });
+    gsap.from(".c1", {
+        y: 100,
+        opacity: 0,
+        duration: 0.6,
+        scrollTrigger: {
+            trigger: ".c1",
+            start: "top 110%",
+            toggleActions: "restart none none none",
+            markers: false
+        }
+    });
+
+    gsap.from(".d1", {
+        y: 100,
+        opacity: 0,
+        duration: 0.6,
+        scrollTrigger: {
+            trigger: ".d1",
+            start: "top 120%",
+            toggleActions: "restart none none none",
+            markers: false
+        }
+    });
+
+    gsap.from(".h4head", {
+        y: 100,
+        opacity: 0,
+        duration: 1.3,
+        delay:0.3,
+        scrollTrigger: {
+            trigger: ".h4head",
+            start: "top 100%",
+            toggleActions: "restart none none none",
+            markers: false
+        }
+    });
+
+    gsap.from(".textP4", {
+        y: 150,
+        opacity: 0,
+        duration: 1.5,
+        delay:0.7,
+        scrollTrigger: {
+            trigger: ".textP4",
+            start: "top 154%",
+            toggleActions: "restart none none none",
+            markers: false
+        }
+    });
+
+    gsap.from(".h5head", {
+        y: 100,
+        opacity: 0,
+        duration: 1.6,
+        scrollTrigger: {
+            trigger: ".h5head",
+            start: "top 100%",
+            toggleActions: "restart none none none",
+            markers: false
+        }
+    });
+
+    gsap.from(".hobbies", {
+        y: 100,
+        opacity: 0,
+        duration: 1.8,
+        scrollTrigger: {
+            trigger: ".hobbies",
+            start: "top 130%",
+            toggleActions: "restart none none none",
+            markers: false
+        }
+    });
+
+    gsap.from(".textP5", {
+        y: 100,
+        opacity: 0,
+        duration: 1.5,
+        scrollTrigger: {
+            trigger: ".textP5",
+            start: "top 130%",
+            toggleActions: "restart none none none",
+            markers: false
+        }
+    });
+
+
+    gsap.from(".fhead", {
+        y: 100,
+        opacity: 0,
+        duration: 1.8,
+        scrollTrigger: {
+            trigger: ".fhead",
+            start: "top 130%",
+            toggleActions: "restart none none none",
+            markers: false
+        }
+    });
+
+    gsap.from(".detailsf", {
+        y: 100,
+        opacity: 0,
+        duration: 1.8,
+        scrollTrigger: {
+            trigger: ".detailsf",
+            start: "top 130%",
+            toggleActions: "restart none none none",
+            markers: false
+        }
+    });
 }
  
+
